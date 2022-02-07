@@ -24,9 +24,11 @@ public class Calculator {
                 case 4:
                     System.out.println("Division");
                     break;
-
-
+                default:
+                    System.out.println("Please enter valid input");
             }
+
+
             if(input==1){
                 System.out.println("You chose Addition");
                 System.out.println("Please input first number \n ");
@@ -64,3 +66,4 @@ public class Calculator {
         }
 
 }
+
