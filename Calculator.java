@@ -28,7 +28,6 @@ public class Calculator {
                     System.out.println("Please enter valid input");
             }
 
-
             if(input==1){
                 System.out.println("You chose Addition");
                 System.out.println("Please input first number \n ");
