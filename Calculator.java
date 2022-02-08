@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
-        int a, b=0;
+        double a, b , c;
 
         System.out.println("Welcome to calculator!");
         System.out.println("Please chose what operation you wish to do:\n 1)Addition\n 2)Subtraction\n 3)Multiplication\n 4)Division\n");
@@ -34,7 +34,7 @@ public class Calculator {
                 a= scanner.nextInt();
                 System.out.println("Please enter second number \n");
                  b= scanner.nextInt();
-                 int c= a+b;
+                  c= a+b;
                 System.out.println("Result: "+ c);
             }else if(input==2){
                 System.out.println("You chose Subtraction");
@@ -42,7 +42,7 @@ public class Calculator {
                 a= scanner.nextInt();
                 System.out.println("Please enter second number \n");
                 b= scanner.nextInt();
-                int c= a-b;
+                 c= a-b;
                 System.out.println("Result: "+ c);
             }else if(input==3){
                 System.out.println("You chose Multiplication");
@@ -50,7 +50,7 @@ public class Calculator {
                 a= scanner.nextInt();
                 System.out.println("Please enter second number \n");
                 b= scanner.nextInt();
-                int c= a*b;
+                 c= a*b;
                 System.out.println("Result: "+ c);
             }else if(input==4){
                 System.out.println("You chose Division");
@@ -58,7 +58,7 @@ public class Calculator {
                 a= scanner.nextInt();
                 System.out.println("Please enter second number \n");
                 b= scanner.nextInt();
-                int c= a/b;
+                 c= a/b;
                 System.out.println("Result: "+ c);
             }
 
