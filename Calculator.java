@@ -7,7 +7,7 @@ public class Calculator {
         int a, b=0;
 
         System.out.println("Welcome to calculator!");
-        System.out.println("Please chose what operation you wish to do:1)Addition 2)Subtraction 3) Multiplication 4) Division");
+        System.out.println("Please chose what operation you wish to do:\n 1)Addition\n 2)Subtraction\n 3)Multiplication\n 4)Division\n");
         Scanner scanner=new Scanner(System.in);
         int input=scanner.nextInt();
 
