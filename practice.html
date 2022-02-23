@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            display:inline-block;
+        }
+   
+    
+        
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: rgb(103, 19, 236);
+  border-radius: 50%;
+  display: inline-block;
+}
+        
+    </style>
+</head>
+<body>
+    
+        
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">Team1</div>
+  
+
+   
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">Team2</div>
+   
+
+  
+    <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">Team3</div>
+    
+
+    
+        <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">Team4</div>
+
+<!---
+ <br />
+    <span id="d1" class="dot" draggable="true" ondragstart="drag(event)"></span>
+    <span id="d2" class="dot" draggable="true" ondragstart="drag(event)"></span>
+    <span id="d3" class="dot" draggable="true" ondragstart="drag(event)"></span>
+    <span id="d4" class="dot" draggable="true" ondragstart="drag(event)"></span>
+    <span id="d5" class="dot" draggable="true" ondragstart="drag(event)"></span>
+    <span id="d6" class="dot" draggable="true" ondragstart="drag(event)"></span>
+    <span id="d7" class="dot" draggable="true" ondragstart="drag(event)"></span>
+    <span id="d8" class="dot" draggable="true" ondragstart="drag(event)"></span>
+    <span id="d9" class="dot" draggable="true" ondragstart="drag(event)"></span>
+    <span id="d10" class="dot" draggable="true" ondragstart="drag(event)"></span>
+    <span id="d11" class="dot" draggable="true" ondragstart="drag(event)"></span>
+    <span id="d12" class="dot" draggable="true" ondragstart="drag(event)"></span>
+    <span id="d13" class="dot" draggable="true" ondragstart="drag(event)"></span>
+    <span id="d14" class="dot" draggable="true" ondragstart="drag(event)"></span>
+    <span id="d15" class="dot" draggable="true" ondragstart="drag(event)"></span>
+    <span id="d16" class="dot" draggable="true" ondragstart="drag(event)"></span>
+    <span id="d17" class="dot" draggable="true" ondragstart="drag(event)"></span>
+    <span id="d18" class="dot" draggable="true" ondragstart="drag(event)"></span>
+    <span id="d19" class="dot" draggable="true" ondragstart="drag(event)"></span>
+    <span id="d20" class="dot" draggable="true" ondragstart="drag(event)"></span>
+-->
+    <br />
+    <img id="img1" draggable="true" src="images/swtor.jpg" width="50" ondragstart="drag(event)"/>
+    <img id="img2" draggable="true" src="images/image2.jpg" width="50" ondragstart="drag(event)"/>
+    <img id="img3" draggable="true" src="images/img1.jpg" width="50" ondragstart="drag(event)"/>
+    <img id="img4" draggable="true" src="images/img3.jpg" width="50" ondragstart="drag(event)"/>
+    <img id="img5" draggable="true" src="images/img4.jpg" width="50" ondragstart="drag(event)"/>
+    <img id="img6" draggable="true" src="images/img5.jpg" width="50" ondragstart="drag(event)"/>
+    <img id="img7" draggable="true" src="images/img6.jpg" width="50" ondragstart="drag(event)"/>
+    <img id="img8" draggable="true" src="images/img7.jpg" width="50" ondragstart="drag(event)"/>
+    <img id="img9" draggable="true" src="images/img8.jpg" width="50" ondragstart="drag(event)"/>
+    <img id="img10" draggable="true" src="images/img9.jpg" width="50" ondragstart="drag(event)"/>
+    <img id="img11" draggable="true" src="images/img10.jpg" width="50" ondragstart="drag(event)"/>
+    <img id="img12" draggable="true" src="images/img11.jpg" width="50" ondragstart="drag(event)"/>
+    <img id="img13" draggable="true" src="images/img12.jpg" width="50" ondragstart="drag(event)"/>
+    <img id="img14" draggable="true" src="images/img13.jpg" width="50" ondragstart="drag(event)"/>
+    <img id="img15" draggable="true" src="images/img14.jpg" width="50" ondragstart="drag(event)"/>
+    <img id="img16" draggable="true" src="images/img15.jpg" width="50" ondragstart="drag(event)"/>
+    <img id="img17" draggable="true" src="images/img16.jpg" width="50" ondragstart="drag(event)"/>
+    <img id="img18" draggable="true" src="images/img17.jpg" width="50" ondragstart="drag(event)"/>
+    <img id="img19" draggable="true" src="images/img18.jpg" width="50" ondragstart="drag(event)"/>
+    <img id="img20" draggable="true" src="images/img19.jpg" width="50" ondragstart="drag(event)"/>
+
+
+
+    <script>
+
+        function allowDrop(event){
+            event.preventDefault()
+        }
+
+        function drag(event){
+            var id = event.target.id;
+           event.dataTransfer.setData('text', id)
+        }
+
+        function drop(event){
+            var id = event.dataTransfer.getData('text');
+            event.target.appendChild(document.getElementById(id));
+        }
+
+    </script>
+
+</body>
+</html>
